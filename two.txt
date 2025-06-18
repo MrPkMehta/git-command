@@ -1,3 +1,5 @@
 this is file in git two folder
 
 add another folder or file to txt
+
+we are learning git push command 
