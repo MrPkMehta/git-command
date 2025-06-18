@@ -3,6 +3,51 @@
 ### A complete guide of the **most essential Git commands** with examples and explanations.
 
 ---
+# 📘 Git Command Cheat Sheet
+
+> A complete guide of the **most essential Git commands** with syntax, examples, and explanations.
+
+[![GitHub Stars](https://img.shields.io/github/stars/MrPkMehta/git-command-cheatsheet?style=social)](https://github.com/MrPkMehta/git-command-cheatsheet/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/MrPkMehta/git-command-cheatsheet?style=social)](https://github.com/MrPkMehta/git-command-cheatsheet/network/members)
+[![GitHub Issues](https://img.shields.io/github/issues/MrPkMehta/git-command-cheatsheet)](https://github.com/MrPkMehta/git-command-cheatsheet/issues)
+
+---
+
+## 📚 Table of Contents
+
+1. [Initialize Git Repo](#-1-initialize-git-repo)
+2. [Check Git Version](#-2-check-git-version)
+3. [Configure Git Username](#-3-configure-git-username-only-once)
+4. [Configure Git Email](#-4-configure-git-email-only-once)
+5. [Check Git Config](#-5-check-git-config)
+6. [Track Files](#-6-track-files)
+7. [Commit Changes](#-7-commit-changes)
+8. [Check Commit History](#-8-check-commit-history)
+9. [Check Status](#-9-check-status)
+10. [Remove from Staging](#-10-remove-from-staging)
+11. [Check Changes (Diff)](#-11-check-changes-diff)
+12. [Create New Branch](#-12-create-new-branch)
+13. [Switch Branch](#-13-switch-branch)
+14. [Create & Switch Branch](#-14-create--switch-branch)
+15. [Delete Branch](#-15-delete-branch)
+16. [Connect Remote Repo](#-16-connect-remote-repo)
+17. [Push to Remote Repo](#-17-push-to-remote-repo)
+18. [Pull from Remote](#-18-pull-from-remote)
+19. [Clone a Repository](#-19-clone-a-repository)
+20. [Rename Branch](#-20-rename-branch)
+21. [Remove Cached Files](#-21-remove-cached-files)
+22. [Git Stash (Temp Save)](#-22-git-stash-temp-save)
+23. [Apply Stash](#-23-apply-stash)
+24. [Delete Stash](#-24-delete-stash)
+25. [Delete All Stashes](#-25-delete-all-stashes)
+26. [View Remote URLs](#-26-view-remote-urls)
+27. [See Last Commit](#-27-see-last-commit)
+28. [Clean Untracked Files](#-28-clean-untracked-files)
+29. [See Who Edited File](#-29-see-who-edited-file)
+30. [Archive Repo as ZIP](#-30-archive-repo-as-zip)
+31. [Create Pull Request](#-31-create-pull-request)
+
+---
 
 ## 🔰 1. Initialize Git Repo
 
@@ -490,7 +535,7 @@ git archive --format=zip HEAD > backup.zip
 git push origin <branch-name>
 ```
 
-#### Then go to GitHub and click "Compare & pull request".
+#### Then go to GitHub and click "Compare & pull request.
 ### **Example:**
 
 ```bash
