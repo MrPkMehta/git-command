@@ -1,6 +1,6 @@
 # 📘 **Git Command Cheat Sheet**
 
-> A complete guide of the **\*\*most essential Git commands\*\*** with examples, explanations.
+> A complete guide of the **most essential Git commands** with examples, explanations.
 
 ---
 
@@ -510,10 +510,9 @@ If you found this helpful, don’t forget to:
 * 🧠 **Practice** and become a Git Pro
 * 📢 **Share** it with your friends & colleagues
 
-> 💬 *"One star from you = One more developer empowered!"*
+#### 💬 One star from you = One more developer empowered!
 
-\---
+---
 
-✨ Made with ❤️ by \[MrPkMehta]\([https://github.com/MrPkMehta](https://github.com/MrPkMehta))
+✨ Made with ❤️ by [MrPkMehta]([https://github.com/MrPkMehta](https://github.com/MrPkMehta))
 
-\\
