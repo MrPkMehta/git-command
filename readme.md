@@ -1,84 +1,172 @@
-# 🚀 Master Git with 30 Essential Commands
+# 🚀 30 Essential Git Commands for Every Developer
 
-Welcome to your one-stop guide to Git! Whether you're a beginner or brushing up your skills, this guide makes learning Git commands **quick, clear, and visually fun**. 💻✨
-
----
-
-## 🛠️ Basic Setup
-
-| Command                      | Description                                |
-|-----------------------------|--------------------------------------------|
-| `git init`                  | Initialize a new Git repository            |
-| `git config`                | Configure username and email               |
-| `git clone <url>`           | Clone an existing repository               |
+A handy, beginner-friendly guide to Git — each command explained with one-line usage and example. Master version control like a pro! 🔧
 
 ---
 
-## 📂 Staging & Committing
+## 🔧 Basic Setup
 
-| Command                      | Description                                |
-|-----------------------------|--------------------------------------------|
-| `git status`                | Show current file status                   |
-| `git add <file>`            | Stage changes                              |
-| `git commit -m "msg"`       | Save changes with a message                |
-| `git rm <file>`             | Delete and stage removal of a file         |
-| `git mv <old> <new>`        | Rename or move files                       |
+### 1. `git init`
+📝 Initializes a new Git repo  
+📌 `git init my-project`
 
----
+### 2. `git config`
+⚙️ Sets username and email  
+📌 `git config --global user.name "John"`  
+📌 `git config --global user.email "john@example.com"`
 
-## 🌿 Branching & Merging
-
-| Command                          | Description                            |
-|----------------------------------|----------------------------------------|
-| `git branch`                     | List all branches                      |
-| `git branch <name>`             | Create a new branch                    |
-| `git checkout <branch>`         | Switch branches                        |
-| `git merge <branch>`            | Merge a branch into current branch     |
-| `git cherry-pick <commit>`      | Apply specific commit from another branch |
+### 3. `git clone`
+📥 Clone existing repo  
+📌 `git clone https://github.com/user/repo.git`
 
 ---
 
-## 🔄 History & Logs
+## 📁 Stage & Commit
 
-| Command                      | Description                                |
-|-----------------------------|--------------------------------------------|
-| `git log`                   | View commit history                        |
-| `git reflog`                | Show HEAD changes history                  |
-| `git show <commit>`         | Show commit details                        |
-| `git blame <file>`          | Who changed what & when                   |
-| `git tag <name>`            | Mark a commit with a tag                  |
+### 4. `git status`
+🔍 See current file states  
+📌 `git status`
 
----
+### 5. `git add`
+📥 Stage files for commit  
+📌 `git add file.txt` or `git add .`
 
-## 🧹 Undo & Clean
-
-| Command                      | Description                                |
-|-----------------------------|--------------------------------------------|
-| `git reset`                 | Unstage or revert changes (soft/hard)      |
-| `git revert <commit>`       | Safely undo a commit                       |
-| `git stash`                 | Temporarily save uncommitted work          |
-| `git clean -fd`             | Remove untracked files/folders             |
+### 6. `git commit`
+🗃️ Save changes with message  
+📌 `git commit -m "Added feature"`
 
 ---
 
-## 🌐 Remote Repositories
+## 🌿 Branching
 
-| Command                          | Description                            |
-|----------------------------------|----------------------------------------|
-| `git remote add origin <url>`   | Link local repo to remote              |
-| `git push origin <branch>`      | Push changes to remote                 |
-| `git pull origin <branch>`      | Pull changes from remote               |
-| `git fetch`                     | Fetch updates from remote              |
+### 7. `git branch`
+🌴 View/create branches  
+📌 `git branch`  
+📌 `git branch new-feature`
+
+### 8. `git checkout`
+🔁 Switch branches  
+📌 `git checkout main`
+
+### 9. `git merge`
+🔗 Merge branches  
+📌 `git merge feature-branch`
+
+### 10. `git branch -d`
+🗑️ Delete a branch  
+📌 `git branch -d old-feature`
 
 ---
 
-## 📚 Advanced Tools
+## 🚀 Remote Repositories
 
-| Command                      | Description                                |
-|-----------------------------|--------------------------------------------|
-| `git diff`                  | Show differences between files             |
-| `git bisect`                | Find buggy commit via binary search        |
-| `git archive`               | Export repo as a zip or tar file           |
+### 11. `git remote add`
+🌐 Connect to remote  
+📌 `git remote add origin https://...`
+
+### 12. `git push`
+📤 Push changes to remote  
+📌 `git push origin main`
+
+### 13. `git pull`
+📥 Pull latest from remote  
+📌 `git pull origin main`
+
+### 14. `git fetch`
+⏬ Download changes only  
+📌 `git fetch origin`
+
+### 15. `git remote -v`
+🔍 Show remote URLs  
+📌 `git remote -v`
+
+---
+
+## 🔄 Undoing Changes
+
+### 16. `git reset`
+⏪ Move HEAD, optionally reset  
+📌 `git reset --soft HEAD~1`  
+📌 `git reset --hard <commit>`
+
+### 17. `git revert`
+🧼 Undo specific commit  
+📌 `git revert <commit-id>`
+
+### 18. `git stash`
+📦 Save uncommitted changes  
+📌 `git stash`
+
+### 19. `git stash apply`
+📂 Re-apply stashed changes  
+📌 `git stash apply`
+
+---
+
+## 📜 Logs & History
+
+### 20. `git log`
+📚 Show commit logs  
+📌 `git log --oneline`
+
+### 21. `git reflog`
+📅 Log of branch movement  
+📌 `git reflog`
+
+### 22. `git show`
+🔍 Show commit details  
+📌 `git show <commit>`
+
+### 23. `git diff`
+🔎 Show unstaged/staged changes  
+📌 `git diff` or `git diff --staged`
+
+---
+
+## 🔍 Inspection Tools
+
+### 24. `git blame`
+👤 See who changed each line  
+📌 `git blame app.js`
+
+### 25. `git tag`
+🏷️ Mark specific commits  
+📌 `git tag v1.0`
+
+### 26. `git cherry-pick`
+🍒 Apply specific commit  
+📌 `git cherry-pick <commit>`
+
+---
+
+## 🧹 File Handling
+
+### 27. `git rm`
+🗑️ Delete and stage file  
+📌 `git rm file.txt`
+
+### 28. `git mv`
+✏️ Rename/move files  
+📌 `git mv old.txt new.txt`
+
+### 29. `git clean`
+🧼 Remove untracked files  
+📌 `git clean -fd`
+
+---
+
+## 📦 Extra
+
+### 30. `git archive`
+📁 Export project as zip/tar  
+📌 `git archive --format=zip HEAD > project.zip`
+
+---
+
+## 💡 Bonus: Visual Log
+
+```bash
+git log --oneline --graph --all
 
 ---
 
