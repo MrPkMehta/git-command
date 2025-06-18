@@ -1,441 +1,519 @@
-# 🚀 Git Command Cheat Sheet
+# 📘 **Git Command Cheat Sheet**
 
-A complete guide of the **most essential Git commands** with examples, explanations.
+> A complete guide of the **\*\*most essential Git commands\*\*** with examples, explanations.
 
 ---
 
-### ✅ Setup Git (Only Once)
+## 🔰 1. Initialize Git Repo
 
 ```bash
-# Syntax
+git init
+```
+
+**Example:**
+
+```bash
+git init my-project
+```
+
+🧠 Creates a new Git repository.
+
+---
+
+## 📂 2. Check Git Version
+
+```bash
+git --version
+```
+
+**Example:**
+
+```bash
+git --version
+```
+
+🧠 Displays your current Git version.
+
+---
+
+## 🛠 3. Configure Git Username (only once)
+
+```bash
 git config --global user.name "Your Name"
+```
+
+**Example:**
+
+```bash
+git config --global user.name "MrPkMehta"
+```
+
+🧠 Sets your name in all commits.
+
+---
+
+## ✉️ 4. Configure Git Email (only once)
+
+```bash
 git config --global user.email "you@example.com"
 ```
 
+**Example:**
+
 ```bash
-# Example
-git config --global user.name "Priyamanshu"
-git config --global user.email "mehta@gmail.com"
+git config --global user.email "mrpkmehta@example.com"
 ```
 
-📌 Sets your name and email for all git commits.
+🧠 Sets your email in all commits.
 
 ---
 
-### 📁 Initialize a New Repo
+## 📄 5. Check Git Config
 
 ```bash
-# Syntax
-git init
+git config --list
 ```
+
+**Example:**
 
 ```bash
-# Example
-git init
+git config --list
 ```
 
-📌 Creates a new Git repo in the current folder.
+🧠 Shows all the Git configuration.
 
 ---
 
-### 🔍 Check Current Git Status
+## 📦 6. Track Files
 
 ```bash
-# Syntax
-git status
+git add <file>
 ```
 
-```bash
-git status
-```
-
-📌 Shows modified/untracked files.
-
----
-
-### ➕ Add Files to Staging Area
-
-```bash
-# Syntax
-git add <file|.>
-```
+**Example:**
 
 ```bash
 git add index.html
 ```
 
-📌 Adds specified file(s) to staging.
+🧠 Adds file(s) to staging area.
 
 ---
 
-### ✅ Commit Changes
+## ✅ 7. Commit Changes
 
 ```bash
-# Syntax
-git commit -m "message"
+git commit -m "Your message"
 ```
+
+**Example:**
 
 ```bash
-git commit -m "Initial commit"
+git commit -m "Add homepage UI"
 ```
 
-📌 Saves staged changes with a message.
+🧠 Commits staged files with message.
 
 ---
 
-### 🔄 Connect to Remote Repo
+## 🔁 8. Check Commit History
 
 ```bash
-# Syntax
-git remote add origin <url>
+git log
 ```
+
+**Example:**
+
+```bash
+git log
+```
+
+🧠 Lists recent commits.
+
+---
+
+## 📶 9. Check Status
+
+```bash
+git status
+```
+
+**Example:**
+
+```bash
+git status
+```
+
+🧠 Shows modified/untracked files.
+
+---
+
+## 🧽 10. Remove from Staging
+
+```bash
+git reset <file>
+```
+
+**Example:**
+
+```bash
+git reset index.html
+```
+
+🧠 Unstages file from staging area.
+
+---
+
+## 🔍 11. Check Changes (Diff)
+
+```bash
+git diff
+```
+
+**Example:**
+
+```bash
+git diff
+```
+
+🧠 Shows file differences.
+
+---
+
+## 🌿 12. Create New Branch
+
+```bash
+git branch <branch-name>
+```
+
+**Example:**
+
+```bash
+git branch dev
+```
+
+🧠 Creates a new branch.
+
+---
+
+## 🔄 13. Switch Branch
+
+```bash
+git checkout <branch-name>
+```
+
+**Example:**
+
+```bash
+git checkout dev
+```
+
+🧠 Switches to the given branch.
+
+---
+
+## 🔁 14. Create & Switch Branch
+
+```bash
+git checkout -b <branch-name>
+```
+
+**Example:**
+
+```bash
+git checkout -b feature/login
+```
+
+🧠 Creates and switches to a new branch.
+
+---
+
+## 🔥 15. Delete Branch
+
+```bash
+git branch -d <branch-name>
+```
+
+**Example:**
+
+```bash
+git branch -d dev
+```
+
+🧠 Deletes a branch.
+
+---
+
+## 🔗 16. Connect Remote Repo
+
+```bash
+git remote add origin <repo-url>
+```
+
+**Example:**
 
 ```bash
 git remote add origin https://github.com/user/repo.git
 ```
 
-📌 Links local repo to remote GitHub repo.
+🧠 Links local repo with remote.
 
 ---
 
-### 🚀 Push to Remote Repo
+## ☁️ 17. Push to Remote Repo
 
 ```bash
-# Syntax
 git push -u origin <branch>
 ```
+
+**Example:**
 
 ```bash
 git push -u origin main
 ```
 
-📌 Pushes commits to remote (first time).
+🧠 Uploads branch to remote.
 
 ---
 
-### 🔽 Pull From Remote Repo
+## 📥 18. Pull from Remote
 
 ```bash
-# Syntax
-git pull origin <branch>
+git pull
 ```
+
+**Example:**
 
 ```bash
-git pull origin main
+git pull
 ```
 
-📌 Fetches and merges latest remote changes.
+🧠 Fetches and merges changes.
 
 ---
 
-### 🌱 Create New Branch
+## 📌 19. Clone a Repository
 
 ```bash
-# Syntax
-git branch <branch_name>
+git clone <repo-url>
 ```
+
+**Example:**
 
 ```bash
-git branch feature/login
+git clone https://github.com/user/repo.git
 ```
 
-📌 Creates a new branch.
+🧠 Copies a remote repo locally.
 
 ---
 
-### 🔀 Switch to Branch
+## 🚚 20. Rename Branch
 
 ```bash
-# Syntax
-git checkout <branch_name>
+git branch -m <new-name>
 ```
+
+**Example:**
 
 ```bash
-git checkout feature/login
+git branch -m main
 ```
 
-📌 Moves to the specified branch.
+🧠 Renames the current branch.
 
 ---
 
-### 🔄 Create + Switch Branch (Shortcut)
+## 🧼 21. Remove Cached Files
 
 ```bash
-# Syntax
-git checkout -b <branch_name>
-```
-
-```bash
-git checkout -b feature/signup
-```
-
-📌 Creates and switches to new branch.
-
----
-
-### 📜 See All Branches
-
-```bash
-# Syntax
-git branch
-```
-
-```bash
-git branch
-```
-
-📌 Lists all branches.
-
----
-
-### 🧹 Delete Branch
-
-```bash
-# Syntax
-git branch -d <branch_name>
-```
-
-```bash
-git branch -d feature/signup
-```
-
-📌 Deletes local branch.
-
----
-
-### 🔄 Merge Branch
-
-```bash
-# Syntax
-git merge <branch_name>
-```
-
-```bash
-git merge feature/login
-```
-
-📌 Merges given branch into current.
-
----
-
-### 🎉 Clone Repo
-
-```bash
-# Syntax
-git clone <url>
-```
-
-```bash
-git clone https://github.com/user/project.git
-```
-
-📌 Downloads a repo to your system.
-
----
-
-### 🔁 View Commit History
-
-```bash
-# Syntax
-git log
-```
-
-```bash
-git log
-```
-
-📌 Shows full commit history.
-
----
-
-### 🧾 View Commit History (One-line)
-
-```bash
-# Syntax
-git log --oneline
-```
-
-```bash
-git log --oneline
-```
-
-📌 Summarized commit list.
-
----
-
-### 🛠 Undo Changes in File
-
-```bash
-# Syntax
-git checkout -- <file>
-```
-
-```bash
-git checkout -- index.html
-```
-
-📌 Discards changes in file.
-
----
-
-### 🚫 Remove File from Git (but keep locally)
-
-```bash
-# Syntax
 git rm --cached <file>
 ```
 
+**Example:**
+
 ```bash
-git rm --cached secret.env
+git rm --cached config.js
 ```
 
-📌 Stops tracking file but keeps it.
+🧠 Stops tracking file in Git.
 
 ---
 
-### 🧼 Clean Untracked Files
-
-```bash
-# Syntax
-git clean -fd
-```
-
-```bash
-git clean -fd
-```
-
-📌 Deletes all untracked files.
-
----
-
-### 🎯 Stash Changes
-
-```bash
-# Syntax
-git stash
-```
+## 🧾 22. Git Stash (Temp Save)
 
 ```bash
 git stash
 ```
 
-📌 Temporarily saves uncommitted changes.
+**Example:**
+
+```bash
+git stash
+```
+
+🧠 Saves changes temporarily.
 
 ---
 
-### 🧾 Show Stash List
-
-```bash
-# Syntax
-git stash list
-```
-
-```bash
-git stash list
-```
-
-📌 Lists stashed changes.
-
----
-
-### 🔙 Apply Stash
-
-```bash
-# Syntax
-git stash apply
-```
+## ♻️ 23. Apply Stash
 
 ```bash
 git stash apply
 ```
 
-📌 Applies latest stash.
+**Example:**
+
+```bash
+git stash apply
+```
+
+🧠 Restores last stashed change.
 
 ---
 
-### 🧼 Drop Stash
+## 🗑 24. Delete Stash
 
 ```bash
-# Syntax
 git stash drop
 ```
 
+**Example:**
+
 ```bash
 git stash drop
 ```
 
-📌 Removes the latest stash.
+🧠 Deletes the most recent stash.
 
 ---
 
-### 🔎 View Diffs
+## 💥 25. Delete All Stashes
 
 ```bash
-# Syntax
-git diff
+git stash clear
 ```
+
+**Example:**
 
 ```bash
-git diff
+git stash clear
 ```
 
-📌 Shows unstaged code changes.
+🧠 Clears all stashes.
 
 ---
 
-### 🧠 Who Changed What (Blame)
+## 💭 26. View Remote URLs
 
 ```bash
-# Syntax
+git remote -v
+```
+
+**Example:**
+
+```bash
+git remote -v
+```
+
+🧠 Shows remote repository URLs.
+
+---
+
+## 🕵️‍♂️ 27. See Last Commit
+
+```bash
+git show
+```
+
+**Example:**
+
+```bash
+git show
+```
+
+🧠 Displays details of the last commit.
+
+---
+
+## 🧹 28. Clean Untracked Files
+
+```bash
+git clean -fd
+```
+
+**Example:**
+
+```bash
+git clean -fd
+```
+
+🧠 Deletes untracked files & folders.
+
+---
+
+## 🧑‍💻 29. See Who Edited File
+
+```bash
 git blame <file>
 ```
 
+**Example:**
+
 ```bash
-git blame index.html
+git blame index.js
 ```
 
-📌 Shows who edited each line.
+🧠 Shows who wrote each line.
 
 ---
 
-### 💌 Create Pull Request
-
-➡️ Go to GitHub → Click "Compare & Pull Request"
-
-📌 Used to request code review and merging.
-
----
-
-### 📦 Archive Repo as ZIP
-
-```bash
-# Syntax
-git archive --format=zip HEAD > file.zip
-```
+## 📦 30. Archive Repo as ZIP
 
 ```bash
 git archive --format=zip HEAD > project.zip
 ```
 
-📌 Saves repo as a zip file.
+**Example:**
 
----
-
-### 📋 Enable Copy Button (JavaScript)
-
-Use this script at the end of README (for Markdown + HTML rendering sites like GitHub Pages):
-
-```html
-<script>
-function copy(id) {
-  const text = document.getElementById(id).innerText;
-  navigator.clipboard.writeText(text).then(() => {
-    alert("✅ Copied: " + text);
-  });
-}
-</script>
+```bash
+git archive --format=zip HEAD > backup.zip
 ```
 
+🧠 Saves repo as a ZIP file.
+
 ---
 
-✨ Made with ❤️ by [MrPkMehta](https://github.com/MrPkMehta)
+## 🚀 31. Create Pull Request
+
+```bash
+git push origin <branch-name>
+```
+
+> Then go to GitHub and click "Compare & pull request".
+> **Example:**
+
+```bash
+git push origin feature/login
+```
+
+🧠 Initiates a pull request from a branch.
+
+---
+
+### 🌟 Loved these Git commands?
+
+If you found this helpful, don’t forget to:
+
+* ⭐ **Star** this repo to show your support
+* 🍴 **Fork** it to keep your personal copy
+* 🧠 **Practice** and become a Git Pro
+* 📢 **Share** it with your friends & colleagues
+
+> 💬 *"One star from you = One more developer empowered!"*
+
+\---
+
+✨ Made with ❤️ by \[MrPkMehta]\([https://github.com/MrPkMehta](https://github.com/MrPkMehta))
+
+\\
