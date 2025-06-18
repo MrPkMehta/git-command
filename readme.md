@@ -4,19 +4,19 @@
 
 ---
 
-| **Basics** | **Branching & Merging** | **Remote & Advanced** |
-|------------|--------------------------|-------------------------|
-| 1. [Initialize Git Repo](#1-initialize-git-repo) | 12. [Create New Branch](#12-create-new-branch) | 23. [Apply Stash](#23-apply-stash) |
-| 2. [Check Git Version](#2-check-git-version) | 13. [Switch Branch](#13-switch-branch) | 24. [Delete Stash](#24-delete-stash) |
-| 3. [Configure Git Username](#3-configure-git-username-only-once) | 14. [Create & Switch Branch](#14-create--switch-branch) | 25. [Delete All Stashes](#25-delete-all-stashes) |
-| 4. [Configure Git Email](#4-configure-git-email-only-once) | 15. [Delete Branch](#15-delete-branch) | 26. [View Remote URLs](#26-view-remote-urls) |
-| 5. [Check Git Config](#5-check-git-config) | 16. [Connect Remote Repo](#16-connect-remote-repo) | 27. [See Last Commit](#27-see-last-commit) |
-| 6. [Track Files](#6-track-files) | 17. [Push to Remote Repo](#17-push-to-remote-repo) | 28. [Clean Untracked Files](#28-clean-untracked-files) |
-| 7. [Commit Changes](#7-commit-changes) | 18. [Pull from Remote](#18-pull-from-remote) | 29. [See Who Edited File](#29-see-who-edited-file) |
-| 8. [Check Commit History](#8-check-commit-history) | 19. [Clone a Repository](#19-clone-a-repository) | 30. [Archive Repo as ZIP](#30-archive-repo-as-zip) |
-| 9. [Check Status](#9-check-status) | 20. [Rename Branch](#20-rename-branch) | 31. [Create Pull Request](#31-create-pull-request) |
-| 10. [Remove from Staging](#10-remove-from-staging) | 21. [Remove Cached Files](#21-remove-cached-files) | |
-| 11. [Check Changes (Diff)](#11-check-changes-diff) | 22. [Git Stash (Temp Save)](#22-git-stash-temp-save) | |
+| **Basics**                                                       | **Branching & Merging**                                 | **Remote & Advanced**                                  |
+| ---------------------------------------------------------------- | ------------------------------------------------------- | ------------------------------------------------------ |
+| 1. [Initialize Git Repo](#1-initialize-git-repo)                 | 12. [Create New Branch](#12-create-new-branch)          | 23. [Apply Stash](#23-apply-stash)                     |
+| 2. [Check Git Version](#2-check-git-version)                     | 13. [Switch Branch](#13-switch-branch)                  | 24. [Delete Stash](#24-delete-stash)                   |
+| 3. [Configure Git Username](#3-configure-git-username-only-once) | 14. [Create & Switch Branch](#14-create--switch-branch) | 25. [Delete All Stashes](#25-delete-all-stashes)       |
+| 4. [Configure Git Email](#4-configure-git-email-only-once)       | 15. [Delete Branch](#15-delete-branch)                  | 26. [View Remote URLs](#26-view-remote-urls)           |
+| 5. [Check Git Config](#5-check-git-config)                       | 16. [Connect Remote Repo](#16-connect-remote-repo)      | 27. [See Last Commit](#27-see-last-commit)             |
+| 6. [Track Files](#6-track-files)                                 | 17. [Push to Remote Repo](#17-push-to-remote-repo)      | 28. [Clean Untracked Files](#28-clean-untracked-files) |
+| 7. [Commit Changes](#7-commit-changes)                           | 18. [Pull from Remote](#18-pull-from-remote)            | 29. [See Who Edited File](#29-see-who-edited-file)     |
+| 8. [Check Commit History](#8-check-commit-history)               | 19. [Clone a Repository](#19-clone-a-repository)        | 30. [Archive Repo as ZIP](#30-archive-repo-as-zip)     |
+| 9. [Check Status](#9-check-status)                               | 20. [Rename Branch](#20-rename-branch)                  | 31. [Create Pull Request](#31-create-pull-request)     |
+| 10. [Remove from Staging](#10-remove-from-staging)               | 21. [Remove Cached Files](#21-remove-cached-files)      |                                                        |
+| 11. [Check Changes (Diff)](#11-check-changes-diff)               | 22. [Git Stash (Temp Save)](#22-git-stash-temp-save)    |                                                        |
 
 ---
 
@@ -32,7 +32,7 @@ git init
 git init my-project
 ```
 
-🧠 Creates a new Git repository.
+🧐 Creates a new Git repository.
 
 ---
 
@@ -48,7 +48,7 @@ git --version
 git --version
 ```
 
-🧠 Displays your current Git version.
+🧐 Displays your current Git version.
 
 ---
 
@@ -64,7 +64,7 @@ git config --global user.name "Your Name"
 git config --global user.name "MrPkMehta"
 ```
 
-🧠 Sets your name in all commits.
+🧐 Sets your name in all commits.
 
 ---
 
@@ -80,7 +80,7 @@ git config --global user.email "you@example.com"
 git config --global user.email "mrpkmehta@example.com"
 ```
 
-🧠 Sets your email in all commits.
+🧐 Sets your email in all commits.
 
 ---
 
@@ -96,7 +96,7 @@ git config --list
 git config --list
 ```
 
-🧠 Shows all the Git configuration.
+🧐 Shows all the Git configuration.
 
 ---
 
@@ -112,7 +112,7 @@ git add <file>
 git add index.html
 ```
 
-🧠 Adds file(s) to staging area.
+🧐 Adds file(s) to staging area.
 
 ---
 
@@ -128,7 +128,7 @@ git commit -m "Your message"
 git commit -m "Add homepage UI"
 ```
 
-🧠 Commits staged files with message.
+🧐 Commits staged files with message.
 
 ---
 
@@ -144,7 +144,7 @@ git log
 git log
 ```
 
-🧠 Lists recent commits.
+🧐 Lists recent commits.
 
 ---
 
@@ -160,7 +160,7 @@ git status
 git status
 ```
 
-🧠 Shows modified/untracked files.
+🧐 Shows modified/untracked files.
 
 ---
 
@@ -176,7 +176,7 @@ git reset <file>
 git reset index.html
 ```
 
-🧠 Unstages file from staging area.
+🧐 Unstages file from staging area.
 
 ---
 
@@ -192,7 +192,7 @@ git diff
 git diff
 ```
 
-🧠 Shows file differences.
+🧐 Shows file differences.
 
 ---
 
