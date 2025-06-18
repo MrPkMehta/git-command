@@ -1,6 +1,6 @@
 # 📘 **Git Command Cheat Sheet**
 
-> A complete guide of the **most essential Git commands** with examples, explanations.
+### A complete guide of the **most essential Git commands** with examples, explanations.
 
 ---
 
@@ -490,8 +490,8 @@ git archive --format=zip HEAD > backup.zip
 git push origin <branch-name>
 ```
 
-> Then go to GitHub and click "Compare & pull request".
-> **Example:**
+### Then go to GitHub and click "Compare & pull request".
+### **Example:**
 
 ```bash
 git push origin feature/login
