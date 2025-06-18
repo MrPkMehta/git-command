@@ -530,5 +530,5 @@ If you found this helpful, don’t forget to:
 
 ---
 
-✨ Made with ❤️ by [MrPkMehta]([https://github.com/MrPkMehta](https://github.com/MrPkMehta))
+✨ Made with ❤️ by [MrPkMehta](https://github.com/MrPkMehta)
 
